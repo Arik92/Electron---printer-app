@@ -1,0 +1,18 @@
+.log-btns-container {
+    display:flex;
+    flex-direction:row;
+}
+.cron-progress {
+    cursor: not-allowed !important;
+    pointer-events: none;
+    background-color:gray;
+}
+.log-container {
+    width: 100%;
+    // overflow-y: scroll;
+    overflow-y: auto;
+    height: 500px;
+    .log-table {
+        overflow-y:hidden;
+    }
+}

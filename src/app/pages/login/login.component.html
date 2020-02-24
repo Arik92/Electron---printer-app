@@ -1,0 +1,45 @@
+<div class="login-container row mx-auto">  
+  <div class="col-md-4 mx-auto pl-5">
+    <div class="card card-user">
+      <div class="card-header pl-5">
+        <h5 class="card-title">Printer Login </h5>
+        <!-- <h5 *ngIf="incorrectCreds" class="card-title invalid-login" >Wrong Credentials. Please try again</h5> -->
+      </div>
+      <div class="card-body">
+        <form>
+            <!-- <div class="col-md-5 pr-1">
+              <div class="form-group">
+                <label>Company (disabled)</label>
+                <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+              </div>
+            </div> possibly for device name -->                    
+          <div class="row">
+            <div class="col-md-9 pl-5">
+              <div class="form-group">
+                <label>Username</label>
+                <input name="username" type="text" class="form-control" placeholder="User" [(ngModel)]="login.username">
+              </div>
+            </div>
+          </div>
+          <div class="row">           
+              <div class="col-md-9 pl-5">
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input name="pass" type="password" class="form-control" placeholder="pass" [(ngModel)]="login.password">
+                  </div>
+                </div>
+          </div>          
+          <div class="card-header pl-5">
+              <h5 class="card-title invalid-login" *ngIf="incorrectCreds" >Wrong Credentials. Please try again</h5>
+              <!-- <h5 *ngIf="incorrectCreds" class="card-title invalid-login" >Wrong Credentials. Please try again</h5> -->
+            </div>
+          <div class="row">
+            <div class="col-md-12 pl-5 update ml-auto mr-auto">
+              <button (click)="attemptLogin()" type="submit" class="btn btn-primary btn-round">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="settings-container row mx-auto">  
+  <div class="col-md-12 mx-auto pl-5">
+    <div class="card card-user">
+      <div class="card-header pl-5">
+        <h5 class="card-title">Settings</h5>
+      </div>
+      <div class="card-body">
+        <form>                       
+          <div class="row">
+            <!-- <div class="col-md-4 pl-5 pr-1">
+              <div class="form-group">
+                  <label for="panel-timeout">Time(minutes) Between Updates:</label>
+                  <input class="form-control" name="panel-timeout" type="number" placeholder="3" [(ngModel)]="panelInterval" />
+                  <button class="btn btn-success" (click)="updateCronTimeout()">Update</button>  
+              </div>                
+            </div> -->
+              <div class="col-md-4 pl-5 pr-1">
+                <div class="form-group">                    
+                    <label for="default-dir">Choose directory for print files:</label>
+                    <input class="form-control" name="default-dir" type="text" placeholder="choose-directory" [(ngModel)]="fileDirectory" />
+                    <button class="btn btn-warning" (click)="updateFileDirectory()">Change file Directory</button>                      
+                  </div>  
+                </div>
+                <div class="col-md-4 pl-1 pr-1">
+                  <div class="form-group">                      
+                      <label for="machine-name">Machine Name:</label>
+                      <input class="form-control" name="machine-name" disabled="" [(ngModel)]="machineName" type="text" />
+                    </div>  
+                  </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

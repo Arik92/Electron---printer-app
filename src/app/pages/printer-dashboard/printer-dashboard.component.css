@@ -1,0 +1,20 @@
+.dashboard-container {
+    position:absolute;
+    height: 97%;
+    width: 100%;
+    top: 7%;
+    left: 0;
+    /* background-color: #f0decb;     */
+    display:flex;    
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.setting-section {
+    height:30%;
+    width:100%;    
+}
+.log-section {
+    height:70%;
+    width:100%;
+}
